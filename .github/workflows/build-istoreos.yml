@@ -131,13 +131,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
-    # - name: SSH 连接到 Actions
-      # uses: P3TERX/ssh2actions@main
-      # if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-      # env:
-        # TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        # TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-
     - name: 下载软件包
       id: package
       run: |
@@ -220,7 +213,8 @@ jobs:
       with:
         retain_days: 20
         keep_minimum_runs: 15
-        token: ${{ env.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
+        repository: KawaiiSh1zuku/Actions-iStoreOS-NanoPi-R1
 
     - name: 删除自动发布的旧固件
       uses: dev-drprasad/delete-older-releases@v0.3.3

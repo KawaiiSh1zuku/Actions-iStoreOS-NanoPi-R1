@@ -12,4 +12,4 @@ sed -i "s/push @mirrors, 'https:\/\/mirror2.openwrt.org\/sources';/&\\npush @mir
 
 
 # iStoreOS-settings
-git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
+# git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
