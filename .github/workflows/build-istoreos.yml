@@ -213,7 +213,7 @@ jobs:
       with:
         retain_days: 20
         keep_minimum_runs: 15
-        token: ${{ secrets.TOKEN }}
+        token: ${{ env.GITHUB_TOKEN }}
         repository: KawaiiSh1zuku/Actions-iStoreOS-NanoPi-R1
 
     - name: 删除自动发布的旧固件
