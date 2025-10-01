@@ -4,6 +4,11 @@
 
 ![支持设备](https://img.shields.io/badge/支持设备:-blueviolet.svg?style=flat-square) ![NanoPi R1](https://img.shields.io/badge/NanoPi%20R1-blue.svg?style=flat-square)
 
+# 已知问题 / Known Bugs
+
+1. 设备树配置存在问题，无法驱动无线网卡。需要手动替换`istoreos.dtb`。
+2. 分区存在问题，需要手动分一个`userdata`分区出来。
+
 ## 默认配置
 
 - IP: `http://192.168.100.1` or `http://iStoreOS.lan/`
